@@ -1,0 +1,35 @@
+.container {
+    display: grid;
+    height:100vh;
+    grid-template-columns: 2fr 8fr 2fr;
+    grid-template-rows: 1fr 4fr 4fr;
+    grid-template-areas: "sidebar dashboard rightbar"
+    "sidebar account rightbar"
+    "sidebar orders rightbar" 
+    ;
+}
+
+.side-bar {
+    background-color: green;
+    grid-area: sidebar;
+}
+
+.dashboard-search {
+    background-color: blueviolet;
+    grid-area: dashboard;
+}
+
+.my-account {
+    background-color: chocolate;
+    grid-area: account;
+}
+
+.manage-orders {
+    background-color:cyan;
+    grid-area: orders;
+}
+
+.right-bar {
+    background-color: darkblue;
+    grid-area: rightbar;
+}
