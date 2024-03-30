@@ -1,12 +1,50 @@
 .container {
     display: grid;
-    height:100vh;
+    height: 100vh;
     grid-template-columns: 2fr 8fr 2fr;
     grid-template-rows: 1fr 4fr 4fr;
     grid-template-areas: "sidebar dashboard rightbar"
-    "sidebar account rightbar"
-    "sidebar orders rightbar" 
+        "sidebar account rightbar"
+        "sidebar orders rightbar"
     ;
+}
+
+.cont-side-bar {
+    display: grid;
+    grid-template-rows: 6fr 2fr 2fr 2fr 2fr 2fr 2fr 2fr 6fr;
+    height: 100%;
+}
+
+.dashboard {
+    background-color: yellow;
+}
+
+.profile {
+    background-color: red;
+}
+
+.chat {
+    background-color: brown;
+}
+
+.deposit {
+    background-color: aqua;
+}
+
+.ticket {
+    background-color: black;
+}
+
+.transaction {
+    background-color: chocolate;
+}
+
+.password {
+    background-color: pink;
+}
+
+.sign-out {
+    background-color: plum;
 }
 
 .side-bar {
@@ -25,7 +63,7 @@
 }
 
 .manage-orders {
-    background-color:cyan;
+    background-color: cyan;
     grid-area: orders;
 }
 
