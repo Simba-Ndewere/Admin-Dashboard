@@ -1,8 +1,14 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
 .container {
     display: grid;
     height: 100vh;
     grid-template-columns: 2fr 8fr 2fr;
-    grid-template-rows: 1fr 4fr 4fr;
+    grid-template-rows: 1fr 3.5fr 4.5fr;
     grid-template-areas: "sidebar dashboard rightbar"
         "sidebar account rightbar"
         "sidebar orders rightbar"
@@ -15,8 +21,17 @@
     height: 100%;
 }
 
+.icon {
+    width: 25px;
+}
+
+.image {
+    background-color: blue;
+}
+
 .dashboard {
     background-color: yellow;
+    
 }
 
 .profile {
@@ -32,7 +47,7 @@
 }
 
 .ticket {
-    background-color: black;
+    background-color: orange;
 }
 
 .transaction {
@@ -44,7 +59,7 @@
 }
 
 .sign-out {
-    background-color: plum;
+    background-color: purple;
 }
 
 .side-bar {
@@ -70,4 +85,26 @@
 .right-bar {
     background-color: darkblue;
     grid-area: rightbar;
+}
+
+.dashboard,
+.profile,
+.chat,
+.image,
+.deposit,
+.ticket,
+.transaction,
+.password,
+.sign-out {
+    display: flex;
+    align-items: center;
+    padding-left: 70px;
+    font-size: 20px;
+    gap: 20px;
+}
+
+.trans,
+.tick,
+.dep {
+    width: 130px;
 }
