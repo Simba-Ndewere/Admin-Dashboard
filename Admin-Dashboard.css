@@ -17,8 +17,9 @@ html, body {
 
 .cont-side-bar {
     display: grid;
-    grid-template-rows: 6fr 2fr 2fr 2fr 2fr 2fr 2fr 2fr 6fr;
+    grid-template-rows: 7fr 2fr 2fr 2fr 2fr 2fr 2fr 2fr 5fr;
     height: 100%;
+    background-color: #10113f;
 }
 
 .icon {
@@ -26,45 +27,46 @@ html, body {
 }
 
 .image {
-    background-color: blue;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 5px;
+    margin-bottom: 30px;
 }
 
-.dashboard {
-    background-color: yellow;
-    
+.picture {
+    display: flex;  
+    height: 70%;
+    width: 30%;
 }
 
-.profile {
-    background-color: red;
+.photo {
+    flex-grow: 1;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
 }
 
-.chat {
-    background-color: brown;
+.picture img {
+    width: 100%; 
+    height: 100%; 
+    object-fit: cover; 
+    border-radius: 60px;
 }
 
-.deposit {
-    background-color: aqua;
+.username {
+    font-size: 20px;
 }
 
-.ticket {
-    background-color: orange;
-}
-
-.transaction {
-    background-color: chocolate;
-}
-
-.password {
-    background-color: pink;
-}
-
-.sign-out {
-    background-color: purple;
+.email {
+    font-size: 15px;
 }
 
 .side-bar {
-    background-color: green;
     grid-area: sidebar;
+    color: white;
 }
 
 .dashboard-search {
@@ -90,7 +92,6 @@ html, body {
 .dashboard,
 .profile,
 .chat,
-.image,
 .deposit,
 .ticket,
 .transaction,
@@ -108,3 +109,5 @@ html, body {
 .dep {
     width: 130px;
 }
+
+
