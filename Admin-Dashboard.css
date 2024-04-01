@@ -75,8 +75,51 @@ html, body {
 }
 
 .my-account {
-    background-color: chocolate;
     grid-area: account;
+    display: grid;
+    margin-left: 80px;
+    margin-right: 80px;
+    grid-template-columns: 4fr 4fr 4fr;
+    grid-template-rows: 1fr 4fr 4fr;
+    grid-template-areas: "name name name"
+    "card1 card2 card3" 
+    "card4 card5 card6";
+}
+
+.name {
+    background-color: white;
+    grid-area: name;
+    font-size: 20px;
+}
+
+.card1 {
+    background-color: red;
+    grid-area: card1;
+}
+
+.card2 {
+    background-color: yellow;
+    grid-area: card2;
+}
+
+.card3 {
+    background-color: maroon;
+    grid-area: card3;
+}
+
+.card4 {
+    background-color: darkgray;
+    grid-area: card4;
+}
+
+.card5 {
+    background-color: pink;
+    grid-area: card5;
+}
+
+.card6 {
+    background-color: blue;
+    grid-area: card6;
 }
 
 .manage-orders {
@@ -134,7 +177,7 @@ html, body {
     display: flex;
     align-items: center;
     border-radius: 28px;
-    background-color: #f6f6f6;
+    background-color: #F1F1F1;
     padding: 14px;
 }
 
@@ -150,6 +193,7 @@ html, body {
 .dash-Sign {
     margin-top: 15px;
 }
+
 
 
 
