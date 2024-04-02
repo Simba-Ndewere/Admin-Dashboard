@@ -80,56 +80,59 @@ html, body {
     margin-left: 80px;
     margin-right: 80px;
     grid-template-columns: 4fr 4fr 4fr;
-    grid-template-rows: 1fr 4fr 4fr;
-    grid-template-areas: "name name name"
+    grid-template-rows: 4fr 4fr;
+    grid-template-areas:
     "card1 card2 card3" 
     "card4 card5 card6";
-}
-
-.name {
-    background-color: white;
-    grid-area: name;
-    font-size: 20px;
+    gap: 20px;
 }
 
 .card1 {
-    background-color: red;
     grid-area: card1;
 }
 
 .card2 {
-    background-color: yellow;
     grid-area: card2;
 }
 
 .card3 {
-    background-color: maroon;
     grid-area: card3;
 }
 
 .card4 {
-    background-color: darkgray;
     grid-area: card4;
 }
 
 .card5 {
-    background-color: pink;
     grid-area: card5;
 }
 
 .card6 {
-    background-color: blue;
     grid-area: card6;
 }
 
 .manage-orders {
     background-color: cyan;
     grid-area: orders;
+    margin-top: 30px;
 }
 
 .right-bar {
     background-color: darkblue;
     grid-area: rightbar;
+}
+
+.card1,
+.card2,
+.card3,
+.card4,
+.card5,
+.card6 {
+    background-color: white;
+    width: 100%;
+    height: 100%;
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.25);
+    border-radius: 10px;
 }
 
 .dashboard,
@@ -168,8 +171,9 @@ html, body {
 .dash-Sign {
     display: flex;
     flex-direction: row;
-    width: 140px;
+    width: 200px;
     gap:10px;
+    margin-top: 15px;
 }
 
 .search {
@@ -190,11 +194,59 @@ html, body {
     background: transparent;
 }
 
-.dash-Sign {
-    margin-top: 15px;
+.card1,
+.card2,
+.card3,
+.card4,
+.card5,
+.card6 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 3fr;
+    grid-template-areas: "image iconContainer"
+    "image iconContainer"
+    "image iconContainer";
+    gap:10px;
 }
 
+.iconImage {
+    grid-area: image;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 
+.depositNow {
+    height: 30px;
+    font-size: 20px;
+    display: flex;
+    align-items: end;
+}
+
+.amount {
+    flex-grow: 1;
+    font-size: 30px;
+    color: #6564ea;
+    display: flex;
+    align-items: center;
+    font-size: 50px;
+}
+
+.iconImage img {
+    width: 60%;
+    height: 60%;
+    border-radius: 60px;
+}
+
+.iconContainer {
+    display: flex;
+    flex-direction: column;
+    grid-area: iconContainer;
+    height: 70%;
+    margin: auto;
+    width: 100%;
+
+}
 
 
 
