@@ -112,9 +112,17 @@ html, body {
 }
 
 .manage-orders {
-    background-color: cyan;
+    background-color: white;
     grid-area: orders;
     margin-top: 30px;
+    margin-right: 80px;
+    margin-left: 80px;
+    display: flex;
+    flex-direction: column;
+}
+
+.transactions {
+    font-size: 20px;
 }
 
 .right-bar {
@@ -174,6 +182,7 @@ html, body {
     width: 200px;
     gap:10px;
     margin-top: 15px;
+    margin-left: 50px;
 }
 
 .search {
@@ -235,7 +244,7 @@ html, body {
 .iconImage img {
     width: 60%;
     height: 60%;
-    border-radius: 60px;
+    
 }
 
 .iconContainer {
@@ -245,8 +254,45 @@ html, body {
     height: 70%;
     margin: auto;
     width: 100%;
-
 }
+
+.content-table {
+    border-collapse: collapse;
+    margin: 25px 0;
+    font-size: 20px;
+    width: 100%;
+    overflow: hidden;
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.25);
+    border-radius: 10px;
+    color: black;
+}
+
+.content-table thead tr {
+    background-color: #6564ea;
+    color: white;
+    text-align: left;
+    font-weight: 100;
+}
+
+.content-table th,
+.content-table td {
+    padding: 12px 15px;
+}
+
+.content-table tbody tr {
+    border-bottom: 1px solid #dddddd;
+}
+
+
+.content-table tbody tr:last-of-type {
+    border-bottom: 2px solid #6564ea;
+}
+
+.content-table tbody tr.active-row {
+    font-weight: bold;
+    color: #6564ea;
+}
+
 
 
 
